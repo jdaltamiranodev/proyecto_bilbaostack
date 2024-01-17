@@ -1,5 +1,13 @@
 :root {
     --primario: #0000FF;
+    --secundario: #ABDB2A;
+    --colorFondo: #121212;
+
+    --fuentePrincipal: .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
 }
 
 html {
@@ -12,7 +20,7 @@ box-sizing: inherit;
 }
 
 body {
-
+   /*  background-color: var(--colorFondo); */
 }
 
 .header {
@@ -20,23 +28,26 @@ body {
 }
 
 .header__titulo {
-    color: var(--primario);
+    color: var(--secundario);
     text-align: center;
+    font-size: 3.8rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
 }
 
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+.contenedor__video {
+    height: 80rem;
+    max-height: 100%;
 }
 
-span {
-    /* color: red; */
-    font-family: "Pacifico";
+.video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (min-width: 768px) {
+    .contenedor__video {
+        display: flex;
+        justify-content: center;
+    }
 }
