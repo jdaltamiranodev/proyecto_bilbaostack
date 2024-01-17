@@ -1,0 +1,42 @@
+:root {
+    --primario: #0000FF;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+
+}
+
+.header {
+
+}
+
+.header__titulo {
+    color: var(--primario);
+    text-align: center;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+span {
+    /* color: red; */
+    font-family: "Pacifico";
+}
